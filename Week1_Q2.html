@@ -1,0 +1,27 @@
+<html>
+    <head>
+        Lorem ipsum dolor sit amet.
+    </head>
+    <body>
+        <script>
+
+            const operator = prompt("Enter option: 1.ADD(+),\n 2.SUBTRACT(-),\n 3.MULTIPLY(*),\n 4.DIVIDE(/)\n");
+
+            const n1 = parseFloat(prompt("Enter 1st operand : "));
+            const n2 = parseFloat(prompt("Enter 2nd operand : "));
+
+            let result;
+            if(operator=='+')
+                result = n1+n2;
+            else if(operator=='-')
+                result = n1-n2;
+            if(operator=='*')
+                result = n1*n2;
+            else if(operator=='/')
+                result = n1/n2;
+            
+            console.log(`${n1} ${operator} ${n2} = ${result}`);
+
+        </script>
+    </body>
+</html>
